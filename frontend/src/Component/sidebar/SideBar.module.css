@@ -1,0 +1,38 @@
+.outer {
+    height: 100vh;
+    width: 5vw;
+    top : 6.5%;
+    left : -0.2%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.menuItems {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.menuItem {
+    height: 2rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active {
+    background-color: rgb(69, 69, 76);
+}
+
+.menuItem:hover {
+    transform: scale(1.1);
+    background-color: rgb(94, 92, 92);
+}

@@ -1,0 +1,9 @@
+/* The main filter component */
+.filter {
+  position: fixed;
+  top: 4rem;
+  left: 5%;
+  width: 95%;
+  padding: 10px 0;
+}
+

@@ -1,0 +1,93 @@
+.ButtonParentContainer {
+  margin-left: 20px;
+}
+
+.SignInButton {
+  display: flex;
+  justify-content: center;
+  height: 5.4vh;
+  width: 8vw;
+  border: 1px solid white;
+  border-radius: 20px;
+  gap: 4px;
+}
+.SignInButton:hover {
+  background-color: rgba(240, 248, 255, 0.25);
+  cursor: pointer;
+  border-color: white;
+}
+
+.AvatarContainer {
+  height: 5vh;
+  width: 5vh;
+  border: 1px wheat solid;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.Avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.AvatarMenu {
+  position: fixed;
+  top: 2%;
+  right: 5%;
+  background-color: rgb(40, 40, 40);
+  width: 21vw;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.AvatarMenu > ul {
+  list-style: none;
+  padding-inline-start: 0px;
+  margin-top: 8px;
+}
+.AvatarMenu > ul > li {
+  height: 6vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  padding-left: 15px;
+}
+.AvatarMenu > ul > li:hover {
+  background-color: rgb(62, 62, 62);
+}
+
+.UserDesc > img {
+  height: 84%;
+  width: 27%;
+}
+
+
+.UserDesc {
+  padding: 15px;
+  padding-right: 0px;
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.271);
+  height: 12vh;
+  margin-bottom: 0px;
+}
+.UserDescText {
+  max-width: 12.5vw;
+}
+.AvatarMenuUserName {
+  word-break: break-all; /* forces long text to break and wrap */
+  font-weight: 800;
+}
+.AvatarMenuEmail {
+  word-break: break-all; /* forces long text to break and wrap */
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.AvatarMenuAvatar {
+pointer-events: none; /* Ignore hover events */
+}

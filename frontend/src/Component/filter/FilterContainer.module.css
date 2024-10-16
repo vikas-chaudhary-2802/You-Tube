@@ -1,0 +1,59 @@
+.containerHead {
+    position: relative; /* For positioning the arrows */
+    width: calc(100% - 1.75rem); /* Adjusted to leave space for the arrows */
+    padding: 10px 0;
+    overflow-x: auto; /* Enable horizontal scroll */
+    white-space: nowrap; /* Ensure items don't wrap */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    -ms-overflow-style: none; /* Hides scrollbar in IE */
+    scrollbar-width: none; /* Hides scrollbar in Firefox */
+    margin-right: 40px; /* Gives some space between the filter and the screen edge */
+    border-radius: 5px;
+  }
+  
+  .containerHead::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in Webkit browsers */
+  }
+  
+  .filterList {
+    display: inline-flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  .filterItem {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: rgb(57, 55, 55);
+    color: aliceblue;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .filterItem:hover {
+    background-color: rgb(77, 75, 75);
+    color: rgb(255, 255, 255);
+  }
+  
+  .filterItem.active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(11, 11, 11);
+  }
+  
+  /* Arrow Styles */
+  .arrow {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 2;
+    transition: opacity 0.3s ease;
+  }
+  

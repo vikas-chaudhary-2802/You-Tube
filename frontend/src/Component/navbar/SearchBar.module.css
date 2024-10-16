@@ -1,0 +1,63 @@
+.searchBar {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  /* width: 100%; */
+  /* margin-top: 10px; */
+}
+
+.form {
+  display: flex;
+  width: 100rem; /* Adjust this for different screen sizes */
+  max-width: 600px;
+}
+
+.input {
+  flex: 1;
+  padding: 0px 4px 0px 16px;
+  font-size: 16px;
+  border: 1px solid hsl(0, 0%, 18.82%);
+  border-radius: 2px 0 0 2px;
+  outline: none;
+  transition: border-color 0.2s;
+  background-color: #030303;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  width: 18rem;
+  margin: 0px 0px 0px 32px;
+}
+
+.input:focus {
+  border-color: #065fd4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+  padding: 10px 16px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid hsl(0, 0%, 18.82%);
+  border-left: none;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  transition: border-color 0.2s;
+  width: 5rem;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  border: 1px solid hsl(0, 0%, 18.82%);
+  border-left: none;
+}
+
+.icon {
+  color: #f0ebeb;
+  font-size: 18px;
+}
